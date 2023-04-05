@@ -1,11 +1,8 @@
 /*Add CSS styles here*/
 
-/*Example 2.9*/
 .map {
-    border: medium solid #999;
+    border: medium solid rgb(0, 195, 209);
 }
-
-/*Example 2.4*/
 
 .countries {
     fill: #fff;
@@ -16,10 +13,11 @@
 /*Example 2.7*/
 .gratLines {
     fill: none;
-    stroke: #999;
-    stroke-width: 1px;
+    /*stroke: #999;
+    stroke-width: 1px;*/
 }
 
 .gratBackground {
-    fill: #D5E3FF;
+    fill: #9ff5ff;
 }
+
