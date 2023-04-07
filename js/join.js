@@ -158,7 +158,7 @@ function setEnumerationUnits(unitedStates,map,path,colorScale){
             if(value) {
             	return colorScale(d.properties[expressed]);
             } else {
-            	return "#ccc";
+            	return "#fff";
             }
     });
 }
