@@ -1,4 +1,4 @@
-//wrap everything is immediately invoked anonymous function so nothing is in clobal scope
+//wrap everything is immediately invoked anonymous function so nothing is in global scope
 (function (){
 
 	//pseudo-global variables
@@ -46,11 +46,11 @@
 
 	        setGraticule(map,path);
 
-	        //translate europe TopoJSON
+	        //translate north america TopoJSON
             var americanCountries = topojson.feature(northamerica, northamerica.objects.northamerica),
             unitedStates = topojson.feature(states, states.objects.states).features;
 
-	        //add Europe countries to map
+	        //add North America countries to map
 	        var countries = map.append("path")
 	            .datum(americanCountries)
 	            .attr("class", "countries")
@@ -144,7 +144,7 @@
 	}
 
 function setEnumerationUnits(unitedStates,map,path,colorScale){
-	//add France regions to map
+	//add states to map
     var states = map.selectAll(".states")
         .data(unitedStates)
         .enter()
@@ -194,7 +194,7 @@ function setChart(csvData, colorScale){
         .range([463, 0])
         .domain([0, 900]);
 
-    //set bars for each province
+    //set bars for each state
     var bars = chart.selectAll(".bar")
         .data(csvData)
         .enter()
@@ -224,7 +224,7 @@ function setChart(csvData, colorScale){
         .attr("x", 40)
         .attr("y", 40)
         .attr("class", "chartTitle")
-        .text("Number of Acres " + expressed[3] + " in each state");
+        .text("Number of Acres of " + expressed[3] + " in each state");
 
     //create vertical axis generator
     var yAxis = d3.axisLeft()

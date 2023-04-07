@@ -22,7 +22,6 @@
     stroke-width: 2px;
 }
 
-
 .gratLines {
     fill: none;
     stroke: #999;
@@ -34,7 +33,7 @@
 }
 
 .states {
-    stroke: #000;
+    stroke: rgb(57, 57, 57);
     stroke-width: 0.5px;
     stroke-linecap: round;
 }
