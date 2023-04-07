@@ -67,8 +67,8 @@
 
 	    };
 
-	    
 	};
+
 
 	function setGraticule(map,path){
 		var graticule = d3.geoGraticule()
@@ -117,11 +117,13 @@
 
 	function makeColorScale(data){
 		var colorClasses = [
-	        "#D4B9DA",
-	        "#C994C7",
-	        "#DF65B0",
-	        "#DD1C77",
-	        "#980043"
+
+			"#d2f5ff",
+			"#b3cde3",
+			"#8c96c6",
+			"#8856a7",
+			"#810f7c"
+
 	    ];
 
 	    //create color scale generator
@@ -190,7 +192,7 @@ function setChart(csvData, colorScale){
     //create a scale to size bars proportionally to frame and for axis
     var yScale = d3.scaleLinear()
         .range([463, 0])
-        .domain([0, 100]);
+        .domain([0, 900]);
 
     //set bars for each province
     var bars = chart.selectAll(".bar")
