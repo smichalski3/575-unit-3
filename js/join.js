@@ -27,8 +27,8 @@
     var projection = d3
         .geoAlbers()
         .parallels([29.5, 45.5])
-        .scale(1070)
-        .translate([480, 250])
+        .scale(900)
+		.translate([width / 2, height / 2])
         .rotate([96, 0])
         .center([-0.6, 38.7])
 
@@ -192,7 +192,7 @@ function setChart(csvData, colorScale){
     //create a scale to size bars proportionally to frame and for axis
     var yScale = d3.scaleLinear()
         .range([463, 0])
-        .domain([0, 900]);
+        .domain([0, 36000]);
 
     //set bars for each state
     var bars = chart.selectAll(".bar")
@@ -224,7 +224,7 @@ function setChart(csvData, colorScale){
         .attr("x", 40)
         .attr("y", 40)
         .attr("class", "chartTitle")
-        .text("Number of Acres of " + expressed[3] + " in each state");
+        .text("Number of Acres of " + expressed + " in each state");
 
     //create vertical axis generator
     var yAxis = d3.axisLeft()
