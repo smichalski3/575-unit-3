@@ -22,7 +22,7 @@
 }
 
 .text {
-    color: white;
+    color: #cbcbcb;
     font-family: bell;
 }
 
@@ -67,7 +67,7 @@
     font-family: alpine;
     font-size: 2em;
     font-weight: bold;
-    fill: white;
+    fill: #cbcbcb;
 }
 
 .chartBackground {
@@ -113,8 +113,8 @@
     padding: 2px;
     border: 1px solid #999;
     box-shadow: 2px 2px 4px #999;
-    background-color: #f20091;
-    color: white;
+    background-color: #cf007c;
+    color: rgb(239, 239, 239);
 }
 
 option {
