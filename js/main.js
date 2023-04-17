@@ -7,7 +7,7 @@
     //chart frame dimensions
     var chartWidth = window.innerWidth * 0.425,
         chartHeight = 473,
-        leftPadding = 25,
+        leftPadding = 50,
         rightPadding = 2,
         topBottomPadding = 5,
         chartInnerWidth = chartWidth - leftPadding - rightPadding,
@@ -220,7 +220,7 @@
         //create a text element for the chart title
         var chartTitle = chart
             .append("text")
-            .attr("x", 40)
+            .attr("x", 80)
             .attr("y", 40)
             .attr("class", "chartTitle");
 
@@ -353,8 +353,8 @@
         //change stroke
         var selected = d3
             .selectAll("." + props.id)
-            .style("stroke", "pink")
-            .style("stroke-width", "2");
+            .style("stroke", "#fd8d3c")
+            .style("stroke-width", "3");
         setLabel(props);
     }
 
@@ -384,17 +384,17 @@
     function setLabel(props) {
         console.log("here!");
         //label content
-        var labelAttribute = "<h1>" + props[expressed] + "</h1><b>" + expressed + "</b>";
+        var labelAttribute = "<h1>" + props[expressed] + " Acres" + "</h1><b>" + expressed + "</b>" + " in " + props.name;
 
         //create info label div
         var infolabel = d3
             .select("body")
             .append("div")
             .attr("class", "infolabel")
-            .attr("id", props.id + "_label")
+            .attr("id", props.name + "_label")
             .html(labelAttribute);
 
-        var stateName = infolabel.append("div").attr("class", "labelname").html(props.id);
+        //var stateName = infolabel.append("div").attr("class", "labelname").html(props.name);
     }
 
     //function to move info label with mouse

@@ -7,13 +7,20 @@
 
 .title {
     font-family: alpine;
-    font-size: 40px;
-    color: rgb(126, 0, 128);
+    font-size: 90px;
+    color: #0083a0;
+    text-align: center;
+    margin-bottom: 0px;
+    
     /*background-color: white;*/
 }
 
+.text {
+    color: white;
+}
+
 .map {
-    border: medium solid rgb(0, 195, 209);
+    /*border: medium solid rgb(0, 195, 209);*/
     margin: 10px 0 0 20px;
 }
 
@@ -25,12 +32,12 @@
 
 .gratLines {
     fill: none;
-    stroke: #999;
+    /*stroke: #999;*/
     stroke-width: 1px;
 }
 
 .gratBackground {
-    fill: #0083a0;
+    fill: #000000;
 }
 
 .states {
@@ -40,7 +47,7 @@
 }
 
 .numbers {
-    fill: white;
+    fill: white; 
     font-family: sans-serif;
 }
 
@@ -53,15 +60,16 @@
     font-family: alpine;
     font-size: 2em;
     font-weight: bold;
+    fill: white;
 }
 
 .chartBackground {
-    fill: rgb(83, 83, 83);
+    fill: rgb(0, 0, 0);
 }
 
 .chartFrame {
     fill: none;
-    stroke: #999;
+    /*stroke: #999;*/
     stroke-width: 3px;
     shape-rendering: crispEdges;
 }
@@ -69,7 +77,7 @@
 .axis path,
 .axis line {
     fill: none;
-    stroke: #999;
+    stroke: rgb(255, 255, 255);
     stroke-width: 1px;
     shape-rendering: crispEdges;
 }
@@ -77,7 +85,7 @@
 .axis text {
     font-family: alpine;
     font-size: 10px;
-    fill: rgb(13, 13, 13);
+    fill: rgb(255, 255, 255);
 }
 
 /*
@@ -89,8 +97,8 @@
 
 .dropdown {
     position: absolute;
-    top: 140px;
-    left: 550px;
+    top: 400px;
+    left: 520px;
     z-index: 10;
     font-family: alpine;
     font-size: 1.5em;
@@ -98,6 +106,8 @@
     padding: 2px;
     border: 1px solid #999;
     box-shadow: 2px 2px 4px #999;
+    background-color: rgb(172, 0, 103);
+    color: white;
 }
 
 option {
@@ -107,12 +117,13 @@ option {
 
 .infolabel {
     position: absolute;
-    height: 50px;
+    height: 30px;
     min-width: 100px;
     color: #fff;
     background-color: #000;
     border: solid thin #fff;
     padding: 5px 10px;
+    font-family: alpine;
 }
 
 .infolabel h1 {
@@ -123,16 +134,5 @@ option {
 }
 
 
-.infolabel {
-    margin: 0 20px 0 0;
-    position: absolute;
-    height: 50px;
-    min-width: 100px;
-    color: #fff;
-    background-color: #000;
-    border: solid thin #fff;
-    padding: 5px 10px;
-    top: -75px;
-} 
 
 
