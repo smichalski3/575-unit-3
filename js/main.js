@@ -353,7 +353,7 @@
         //change stroke
         var selected = d3
             .selectAll("." + props.id)
-            .style("stroke", "#fd8d3c")
+            .style("stroke", "#f20091")
             .style("stroke-width", "3");
         setLabel(props);
     }
