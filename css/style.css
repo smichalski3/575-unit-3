@@ -24,11 +24,14 @@
 .text {
     color: #cbcbcb;
     font-family: bell;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .map {
     /*border: medium solid rgb(0, 195, 209);*/
-    margin: 10px 0 0 20px;
+    margin: 10px 0 0 10px;
+    margin-right: 0px;
 }
 
 .countries {
@@ -90,7 +93,7 @@
 }
 
 .axis text {
-    font-family: alpine;
+    font-family: bell;
     font-size: 10px;
     fill: rgb(255, 255, 255);
 }
@@ -104,8 +107,8 @@
 
 .dropdown {
     position: absolute;
-    top: 430px;
-    left: 515px;
+    top: 450px;
+    left: 520px;
     z-index: 10;
     font-family: alpine;
     font-size: 1.5em;
@@ -115,6 +118,7 @@
     box-shadow: 2px 2px 4px #999;
     background-color: #cf007c;
     color: rgb(239, 239, 239);
+    border-radius: 10px
 }
 
 option {
@@ -127,10 +131,11 @@ option {
     height: 30px;
     min-width: 100px;
     color: #fff;
-    background-color: #000;
+    background-color: #cf007c;
     border: solid thin #fff;
     padding: 5px 10px;
     font-family: alpine;
+    border-radius: 10px;
 }
 
 .infolabel h1 {

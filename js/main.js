@@ -38,7 +38,7 @@
     var projection = d3
     .geoAlbers()
     .parallels([29.5, 45.5])
-    .scale(900)
+    .scale(1000)
     .translate([width / 2, height / 2])
     .rotate([96, 0])
     .center([-0.6, 38.7])
@@ -220,8 +220,8 @@
         //create a text element for the chart title
         var chartTitle = chart
             .append("text")
-            .attr("x", 80)
-            .attr("y", 40)
+            .attr("x", 100)
+            .attr("y", 50)
             .attr("class", "chartTitle");
 
         updateChart(bars, csvData.length, colorScale);
