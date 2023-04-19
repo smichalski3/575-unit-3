@@ -317,10 +317,22 @@
             })
             .duration(500);
 
+        var domainArray = [];
+            for (var i = 0; i < csvData.length; i++) {
+                var val = parseFloat(csvData[i][expressed]);
+                domainArray.push(val);
+            }
+        var max = d3.max(domainArray)
+
+        yScale = d3.scaleLinear().range([463, 0]).domain([0, max]);
+
         updateChart(bars, csvData.length, colorScale);
     }
 
     function updateChart(bars, n, colorScale) {
+        var yAxis = d3.axisLeft().scale(yScale);
+
+        d3.select(".axis").call(yAxis)
         //position bars
         bars.attr("x", function (d, i) {
             return i * (chartInnerWidth / n) + leftPadding;
