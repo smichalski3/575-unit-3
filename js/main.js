@@ -38,7 +38,7 @@
     var projection = d3
     .geoAlbers()
     .parallels([29.5, 45.5])
-    .scale(1000)
+    .scale(925)
     .translate([width / 2, height / 2])
     .rotate([96, 0])
     .center([-0.6, 38.7])
